@@ -1,16 +1,9 @@
 # bloodfindingapp
 
-A new Flutter project.
+This is a blood finding app mage using flutter and firebase database. Users can create account and login in the application and make request to blood and can donate blood. 
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![4](https://github.com/nirajbhatta24/blood_finding_app/assets/79129703/1097580b-56a1-434d-aaf1-a1b2b8871b3f)
+![5](https://github.com/nirajbhatta24/blood_finding_app/assets/79129703/9e5dcadd-cc5f-45b7-ba9d-4e1e4343150a)
+![6](https://github.com/nirajbhatta24/blood_finding_app/assets/79129703/46a9b4b0-0717-4f46-9374-bd7b682e50f9)
+![1](https://github.com/nirajbhatta24/blood_finding_app/assets/79129703/185f9c83-d03d-47bf-9b2c-8ea05d629581)
+![3](https://github.com/nirajbhatta24/blood_finding_app/assets/79129703/e3496702-ad2b-45de-adc1-d54200d3dc74)
