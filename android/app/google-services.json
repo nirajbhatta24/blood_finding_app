@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "625167597048",
+    "project_id": "blood-finding-app",
+    "storage_bucket": "blood-finding-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625167597048:android:985eea92f61e9fe7896a0d",
+        "android_client_info": {
+          "package_name": "com.bloodfindingapp.bloodfindingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "625167597048-higjnkmtg9okdkj4907u7ftoa95ppodr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXKAG3lbkllh-iLP-gtkJFrGUqvDAM6HA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "625167597048-higjnkmtg9okdkj4907u7ftoa95ppodr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
