@@ -1,4 +1,3 @@
-import 'package:bloodfindingapp/screens/login.dart';
 import 'package:bloodfindingapp/screens/signup.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -59,6 +58,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Reset Password"),
+        backgroundColor: Colors.red,
       ),
       body: Column(
         children: [
@@ -103,60 +103,30 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          ElevatedButton(
-                            onPressed: () {
-                              // Validate returns true if the form is valid, otherwise false.
-                              if (_formKey.currentState!.validate()) {
-                                setState(() {
-                                  email = emailController.text;
-                                });
-                                resetPassword();
-                              }
-                            },
-                            child: Text(
-                              'Send Email',
-                              style: TextStyle(fontSize: 18.0),
+                          Center(
+                            child: ElevatedButton(
+                              onPressed: () {
+                                // Validate returns true if the form is valid, otherwise false.
+                                if (_formKey.currentState!.validate()) {
+                                  setState(() {
+                                    email = emailController.text;
+                                  });
+                                  resetPassword();
+                                }
+                              },
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: Colors
+                                    .red, // Set the background color to red.
+                              ),
+                              child: Text(
+                                'Send Email',
+                                style: TextStyle(fontSize: 18.0),
+                              ),
                             ),
-                          ),
-                          TextButton(
-                            onPressed: () => {
-                              Navigator.pushAndRemoveUntil(
-                                  context,
-                                  PageRouteBuilder(
-                                    pageBuilder: (context, a, b) => Login(),
-                                    transitionDuration: Duration(seconds: 0),
-                                  ),
-                                  (route) => false)
-                            },
-                            child: Text(
-                              'Login',
-                              style: TextStyle(fontSize: 14.0),
-                            ),
-                          ),
+                          )
                         ],
                       ),
                     ),
-                    Container(
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text("Don't have an Account? "),
-                          TextButton(
-                              onPressed: () => {
-                                    Navigator.pushAndRemoveUntil(
-                                        context,
-                                        PageRouteBuilder(
-                                          pageBuilder: (context, a, b) =>
-                                              Signup(),
-                                          transitionDuration:
-                                              Duration(seconds: 0),
-                                        ),
-                                        (route) => false)
-                                  },
-                              child: Text('Signup'))
-                        ],
-                      ),
-                    )
                   ],
                 ),
               ),
